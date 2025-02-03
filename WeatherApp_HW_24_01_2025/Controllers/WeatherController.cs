@@ -52,11 +52,20 @@ namespace WeatherApp_HW_24_01_2025.Controllers
 
                 return View("WeatherResult", weather);
             }
-            catch
+            catch (HttpRequestException)
             {
-                ViewBag.Error = "Ошибка обработки данных.";
-                return View("Index");
+                ViewBag.Error = "Ошибка соединения с сервером. Попробуйте позже.";
             }
+            catch (JsonException)
+            {
+                ViewBag.Error = "Ошибка обработки данных о погоде.";
+            }
+            catch (Exception)
+            {
+                ViewBag.Error = "Произошла непредвиденная ошибка.";
+            }
+
+            return View("Index");
         }
     }
 }
