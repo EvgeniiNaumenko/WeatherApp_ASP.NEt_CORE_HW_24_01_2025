@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v9.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v9.0": {
+      "WeatherApp_HW_24_01_2025/1.0.0": {
+        "runtime": {
+          "WeatherApp_HW_24_01_2025.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "WeatherApp_HW_24_01_2025/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

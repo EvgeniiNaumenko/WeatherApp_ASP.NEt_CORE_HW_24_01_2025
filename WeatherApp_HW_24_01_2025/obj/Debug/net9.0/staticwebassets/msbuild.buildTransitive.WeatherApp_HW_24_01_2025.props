@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\WeatherApp_HW_24_01_2025.props" />
+</Project>

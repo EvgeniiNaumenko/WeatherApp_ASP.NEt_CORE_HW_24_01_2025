@@ -1,0 +1,17 @@
+﻿@{
+    ViewData["Title"] = "Поиск погоды";
+}
+
+<h2 class="text-center mt-4">Введите название города</h2>
+<div class="container mt-3">
+    <form asp-action="GetWeather" method="post" class="text-center">
+        <div class="input-group mb-3">
+            <input type="text" name="city" class="form-control" placeholder="Введите город" required>
+            <button class="btn btn-primary" type="submit">Узнать погоду</button>
+        </div>
+    </form>
+    @if (ViewBag.Error != null)
+    {
+        <div class="alert alert-danger text-center">@ViewBag.Error</div>
+    }
+</div>
